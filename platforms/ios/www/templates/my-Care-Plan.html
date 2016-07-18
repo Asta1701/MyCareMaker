@@ -1,0 +1,47 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+        <div class="section_title">
+            <h2 class="section_title">My Care Plan</h2>
+        </div> 
+
+        <div class="row responsive-md" ng-repeat="row in table track by $index">
+            <span style="display: none;">outer: {{i = $index}} </span>
+            <!--<span ng-if="$index == 0" style="display: none;">outer: {{titles = row}} </span>-->
+            <div class="col" ng-if="$parent.$index!=0" ng-repeat="col in row track by $index">
+                        
+                <!--<h2 class="{{style}}_background" ng-if="$index==0 && i==0">{{col}}</h2>-->
+                <!--<h2 class="{{style}}_background" ng-if="!($index==0 && i==0) && !(i!=0 && $index==0) && ($index==0 || i==0)">{{col}}</h2>-->
+                <h3 class="{{style}}_background" ng-if="i!=0 && $index==0">{{col}}</h3>
+                
+                <!--Sets i and j as when inside an ng-if the $parent.$index = $index-->
+                <!--<span style="display: none;">inner: {{j = $index}}</span>-->
+                <p ng-if="$index!=0 && i!=0">{{titles[$index]}}</p>
+                <textarea class="{{style}}_foreground" ng-if="$index>0 && i!==0" 
+                          ng-model="table[i][$index]" rows="4" cols="50"></textarea>
+                <br ng-if="$index === 4"/>
+                <br ng-if="$index === 4"/>
+                
+            </div>
+           
+        </div>
+                        
+    </ion-scroll>
+    <ion-footer-bar id="footer" ng-click="save()" align-title="center" class="bar-footer bar-balanced">
+        
+        <div class="row">
+            <div class="col-50 text-right">
+                <span class="">SAVE&nbsp;C</span>
+
+            </div>
+            <div class="col-50 text-left">
+                
+                <span >HANGES</span>
+            </div>
+            
+        </div>
+        
+<!--        <button ng-click="save()" menu-close="" href="#/things-to-do-today"
+                style="margin-top: 10px" class="button button-stable button-block">Save Changes</button>-->
+
+    </ion-footer-bar>
+</ion-view>

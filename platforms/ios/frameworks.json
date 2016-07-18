@@ -1,0 +1,7 @@
+{
+    "EventKit.framework": 1,
+    "EventKitUI.framework": 1,
+    "AddressBook.framework": 1,
+    "AddressBookUI.framework": 1,
+    "SystemConfiguration.framework": 1
+}

@@ -1,0 +1,39 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+        <div class="section_title">
+            <h2 class="section_title">Settings</h2>
+        </div>
+        
+
+        <br/>
+        <form class="list">
+            <label class="item item-input item-text-wrap">
+                <span class="input-label">Postcode:</span>
+                <input class="text-center" ng-model="postCode"
+                       ng-change="postCodeForm(postCode)" ng-model-options="{debounce:3000}" type="text" placeholder="">
+            </label>
+            <label class="item item-input item-text-wrap">
+                <span class="input-label">Personal budget: £</span>
+                <input class="text-center" ng-model="pb.personalBudget" ng-change="personalBudgetForm(pb)" 
+                       ng-model-options="{debounce:1000}" type="tel" placeholder="">
+            </label>
+            <label class="item item-input item-text-wrap">
+                <span class="input-label">Monthly renewal day:</span>
+                <input class="text-center" ng-model="pb.anniversaryDate" ng-change="personalBudgetForm(pb)" 
+                       ng-model-options="{debounce:1000}" type="tel" placeholder="">
+            </label>
+            <label class="item item-input item-text-wrap item text-size-slider">                    <!--Taken from textSizeSlider directive with modification-->
+                <!--<div class="item text-size-slider button-block">-->
+                <span class="text-left input-label">Font size:</span>
+                <!--<span class="small-letter" ng-style="{ fontSize: '16px' }">A</span>-->
+                <input ng-change="fontSizeForm(textSize)" ng-model-options="{debounce:1000}" 
+                       class="Slider" type="range" min="16" max="30" ng-model="textSize" value="{{ textSize }}" />
+                <!--<span class="text-left big-letter" ng-style="{ fontSize: '30px' }">A</span>-->
+                <!--</div>-->
+            </label>
+            <ion-toggle ng-model="styleChoice.checked" ng-change="styleChoiceForm()"toggle-class="toggle-positive">Light Background</ion-toggle>
+
+        </form>            
+
+    </ion-scroll>
+</ion-view>

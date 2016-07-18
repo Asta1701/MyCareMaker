@@ -1,0 +1,13 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+              
+        <button ng-click="promise()">Promises</button>
+        <button ng-click="add()">Add</button>
+        <input type="text" ng-model="val">
+        <button ng-click="remove(val)">Remove</button>
+        <button ng-click="isScheduled()">Check</button>
+        <p ng-repeat="id in ids" ng-click="remove(id)">{{id}}</p>    
+          
+        
+    </ion-scroll>
+</ion-view>

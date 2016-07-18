@@ -1,0 +1,71 @@
+<ion-view>
+    <ion-scroll padding="'true'"  class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+        <div class="section_title">
+            <h2 class="section_title">{{title}}</h2>
+        </div>       
+        <br/>        
+        <div class="row" ng-repeat="appContact in appContacts track by $index" ng-if="($index) % 2 == 0" >
+             
+            <div class="col col-50" ng-if="$index < appContacts.length">   
+                
+               <span style="display: none;">count: {{$index}} </span>
+                
+                <div class="item item-divider item-icon-right {{style}}_foreground">
+           
+                    {{appContact.name}}    
+                    <i class="icon ion-close-circled" ng-click="deleteContact($index)"></i>
+         
+                </div>
+                
+                <div class="item item-image" ng-click="callContact(appContacts[$index].phoneNumber)">
+                    <img src="img/unknown.png" ng-if="appContact.photo == null">
+                    <img src="{{appContact.photo}}" ng-if="appContact.photo != null">
+                </div>
+            
+            </div>
+
+            <div class="col col-50" ng-if="$index + 1 < appContacts.length" >   
+                <span style="display: none;">count: {{$index+1; temp = appContacts[$index + 1]}} </span>
+                <div class="item item-divider item-icon-right {{style}}_foreground">
+           
+                    {{temp.name}}    
+                    <i class="icon ion-close-circled" ng-click="deleteContact($index + 1)"></i>
+         
+                </div>
+
+                <div class="item item-image" ng-click="callContact(appContacts[$index].phoneNumber)">
+                    <img src="img/unknown.png" ng-if="temp.photo == null">
+                    <img src="{{temp.photo}}" ng-if="temp.photo != null">
+                </div>
+
+            </div>
+
+<!--            <div class="col col-50" ng-if="$index + 2 < appContacts.length">
+                <span style="display: none;">count: {{$index+2; temp = appContacts[$index + 2]}} </span>
+                <div class="item-text-wrap item item-divider item-icon-right {{style}}_foreground">
+           
+                    {{temp.name}}    
+                    <i class="icon ion-close-circled" ng-click="deleteContact($index + 2)"></i>
+         
+                </div>
+                <a class='text-center' ng-href="tel:{{temp.phoneNumber}}">
+                <div class="item item-image">
+                    <img src="img/unknown.png" ng-if="temp.photo == null">
+                    <img src="{{temp.photo}}" ng-if="temp.photo != null">
+                </div>
+                </a>
+            </div>-->
+
+
+        </div>
+  
+        <button style="font-size: {{fontSize}}" class="button button-block" ng-click="showDirectoryPopup()">Add Contact From Phone Book</button>
+        
+        <mycaremaker-add submit-fn="addManual()" btnadd="Add a Contact Manually" btncancel="Cancel" 
+                 btnsubmit="Add Contact" btnclass="{{style}}_foreground" 
+                 inputclass="{{style}}_background" labelclass="{{style}}_foreground"
+                 inputs="inputList"></mycaremaker-add>
+        
+        <!--<button class="button button-block" ng-click="deleteAllContacts()">Delete All</button>-->
+    </ion-scroll>
+</ion-view>

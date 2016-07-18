@@ -1,0 +1,40 @@
+{
+    "columnTitles" : [
+        "My Care and Support Needs",
+
+        "1. My Personal Outcomes/Goals",
+
+        "2. How this need will be met informally through preventative, otherwise available support from my community, or my circle of support (if relevant)",
+        
+        "3. Is this particular need considered eligible for Council assistance?",
+
+        "4. How this need will be met by my Personal Budget? (if relevant)" 
+    ],
+    
+    "rowTitles" : [
+        
+        "Accessing work, accessing and engaging in work, training, education or volunteering",
+
+        "Being part of the community, including making use of facilities",
+
+        "Carrying out personal care",
+
+        "Carrying out toileting needs",
+        
+        "Carrying out tasks of being a parent",
+
+        "Communication/Sensory Needs",
+        
+        "Household Activity/Management",
+
+        "Keeping safe in and around my home and elsewhere",
+
+        "Mental Wellbeing",
+
+        "Preparing and having food and drink",
+
+        "Relationships with family/ friends",
+
+        "Complex health needs"
+    ]
+}

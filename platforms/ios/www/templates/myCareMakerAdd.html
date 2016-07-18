@@ -1,0 +1,25 @@
+<ng-include src="id"></ng-include>
+
+<script type="text/ng-template" id="addButton">
+    <button class="button button-block {{btnclass}}" ng-click="goToAddForm()">{{btnadd}}</button>
+</script>
+<script type="text/ng-template" id="addForm">
+    <div ng-repeat="input in inputs track by $index">
+    <label ng-if="input.type !== 'select'" class="item item-input item-text-wrap {{labelclass}}">
+        <span class="input-label {{labelclass}}">{{input.label}}</span>
+        <input class="text-center {{inputclass}}" 
+        ng-model="input.ngmodel" type="{{input.type}}" placeholder="{{input.placeholder}}"> 
+    </label>
+    <label ng-if="input.type === 'select'" class="item item-input item-select item-text-wrap {{labelclass}}">
+        <span class="input-label text-center {{labelclass}}">{{input.label}}</span>
+        <div>
+             <select ng-model='input.ngmodel'class="{{labelclass}} ion-input-select--large"
+            required ng-options='option.value as option.label for option in input.options'></select>
+
+        </div>
+        
+    </label>
+    </div>
+    <button class="button button-block {{btnclass}}" ng-click="submitFn(); goToAddButton();">{{btnsubmit}}</button>
+    <button class="button button-block {{btnclass}}" ng-click="goToAddButton()">{{btncancel}}</button>
+</script>

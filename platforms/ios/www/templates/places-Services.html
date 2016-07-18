@@ -1,0 +1,26 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header has-footer" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+        <div class="section_title">
+            <h2 class="section_title">{{title}}</h2>
+        </div>
+        <h3 ng-bind-html="show"></h3>
+        <ion-list>
+            <ion-item class="{{style}}_foreground item-text-wrap item item-remove-animate" ng-repeat="place in places track by $index" type="item-text-wrap" ng-click="option($index)">
+                <h2 class="{{style}}_foreground">{{place.name}}</h2>
+                <p class="{{style}}_foreground">{{place.address}}</p>
+                <star-rating value="{{place.rating}}"></star-rating>
+            </ion-item>
+        </ion-list>
+    </ion-scroll>
+    <ion-footer-bar class="centered bar-assertive">
+        <div class="row-center">
+            <div class="col-center">
+                
+                <img class="footer-bar-item item-center centered" align="middle" alt="Powered by Google" src="img/powered-by-google/{{platform}}">
+          
+            </div>
+          
+        </div> 
+
+    </ion-footer-bar>
+</ion-view>

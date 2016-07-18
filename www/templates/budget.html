@@ -1,0 +1,28 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+
+        <div class="section_title">
+            <h2 class="section_title">Budget</h2>
+        </div>
+        
+
+        <h3 class="balance">You have £{{balance}} remaining this month!</h3>
+        <br/>  
+        <mycaremaker-add submit-fn="submission()" btnadd="Add an Expense" btncancel="Cancel" 
+                         btnsubmit="Log Expense" btnclass="{{style}}_foreground" 
+                         inputclass="{{style}}_background" labelclass="{{style}}_foreground"
+                         inputs="inputList"></mycaremaker-add>
+
+        <ion-list>
+            <ion-item class="{{style}}_foreground item-text-wrap item item-remove-animate item-icon-right" ng-repeat="budget in budgets track by $index" type="item-text-wrap">
+                <h2 class="{{style}}_foreground">{{budget.date}}</h2>
+                <p class="{{style}}_foreground">Description: {{budget.description}}</p>
+                <p class="{{style}}_foreground">Credit: £{{budget.credit}}</p>
+                <p class="{{style}}_foreground">Debit: £{{budget.debit}}</p>
+                <p class="{{style}}_foreground">Balance: £{{budget.balance}}</p>
+                
+                <i class="icon ion-close-circled" ng-click="remove($index)"></i>
+            </ion-item>
+        </ion-list>
+    </ion-scroll>
+</ion-view>

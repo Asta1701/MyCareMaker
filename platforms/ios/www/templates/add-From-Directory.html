@@ -1,0 +1,18 @@
+<ion-scroll padding="'true'" class="dirPopup" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+   
+<div ng-repeat="contact in phoneContacts track by $index">
+    <div class="list contactCard">
+        <div class="item item-avatar-left item-icon-right {{style}}_foreground">
+
+            <img src="img/unknown.png" ng-if="contact.photos == null"> 
+            <img src="{{contact.photos[0].value}}" ng-if="contact.photos[0].value != null">
+            
+            <p class="{{style}}_foreground">Name: {{contact.displayName}}</p>
+            <p class="{{style}}_foreground">Number: {{contact.phoneNumbers[0].value}}</p>
+
+            <i class="icon ion-plus-circled" ng-click="addDirectory(contact)"></i>
+        </div>
+        <br>
+    </div>
+</div>
+</ion-scroll>

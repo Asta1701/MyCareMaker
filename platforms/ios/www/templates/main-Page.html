@@ -1,0 +1,20 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+
+        <div class="section_title {{style}}_foreground">
+            <h2 class="section_title {{style}}_foreground">MyCareMaker</h2>
+        </div>
+        
+        <!--<a class="button button-block" href="#/test">Testing Page (Debug)</a>-->
+        
+        <a menu-close="" href="#/things-to-do-today" class="mcm_button_large button button-stable button-block"><p>Things to do Today<br/>{{day}}<br/>{{date}}</p></a>
+        <a menu-close="" href="#/planning-my-care" class="button button-stable button-block"><p style="opacity: 0;">SPACER</p><p>Planning My Care</p><p style="opacity: 0;">SPACER</p></a> 
+
+        <div class="button-bar">
+            <a menu-close="" href="#/budget" class="button button-stable button-block item-text-wrap "><br/><p><i class="icon_custom ion-cash "></i><br/>My Budget</p></a>
+            <a menu-close="" href="#/contacts?faf" class="button button-stable button-block item-text-wrap "><br/><p><i class="icon_custom ion-person-stalker "></i><br/>Friends &amp; Family</p></a>
+            <a menu-close="" href="#/contacts?uc" class="button button-stable button-block item-text-wrap "><br/><p><i class="icon_custom ion-medkit "></i><br/>Urgent Care</p></a>
+        </div>
+        
+    </ion-scroll>
+</ion-view>

@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JSDoc: ConfigurationData</title>
+    <link type="text/css" rel="stylesheet" href="css/jsdoc-default.css">
+    <link href="css/prettify-tomorrow.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <script src="js/prettify.js"></script>
+    <script src="js/angular.min.js"></script>
+  </head>
+  <body ng-app="">
+    <nav>
+      <h2><a href="index.html">Index</a></h2>
+      <ul class="module">
+        <!-- app_controllers -->
+        <h3>
+          <a href="" ng-click="moduleapp_controllers = !moduleapp_controllers">
+            module: app.controllers
+          </a>
+          <i ng-cloak="" ng-show="moduleapp_controllers">+</i>
+        </h3>
+        <li id="app.controllers" ng-hide="moduleapp_controllers">
+          <ul class="group">
+            <h3>
+              <a href="" ng-click="app_controllersControllers = !app_controllersControllers">
+                Controllers
+              </a>
+              <i ng-cloak="" ng-show="app_controllersControllers">+</i>
+            </h3>
+            <ul ng-hide="app_controllersControllers">
+              <li>
+                <a href="app.controllers.budgetCtrl.html">budgetCtrl</a>
+              </li><li>
+                <a href="app.controllers.contactsCtrl.html">contactsCtrl</a>
+              </li><li>
+                <a href="app.controllers.general-Planning-My-CareCtrl.html">general-Planning-My-CareCtrl</a>
+              </li><li>
+                <a href="app.controllers.main-PageCtrl.html">main-PageCtrl</a>
+              </li><li>
+                <a href="app.controllers.medicationsCtrl.html">medicationsCtrl</a>
+              </li><li>
+                <a href="app.controllers.settingsCtrl.html">settingsCtrl</a>
+              </li><li>
+                <a href="app.controllers.things-To-Do-TodayCtrl.html">things-To-Do-TodayCtrl</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- app_services -->
+        <h3>
+          <a href="" ng-click="moduleapp_services = !moduleapp_services">
+            module: app.services
+          </a>
+          <i ng-cloak="" ng-show="moduleapp_services">+</i>
+        </h3>
+        <li id="app.services" ng-hide="moduleapp_services">
+          <ul class="group">
+            <h3>
+              <a href="" ng-click="app_servicesFactories = !app_servicesFactories">
+                Factories
+              </a>
+              <i ng-cloak="" ng-show="app_servicesFactories">+</i>
+            </h3>
+            <ul ng-hide="app_servicesFactories">
+              <li>
+                <a href="app.services.BudgetData.html">BudgetData</a>
+              </li><li>
+                <a href="app.services.CarePlanData.html">CarePlanData</a>
+              </li><li>
+                <a href="app.services.ConfigurationData.html">ConfigurationData</a>
+              </li><li>
+                <a href="app.services.GooglePlaces.html">GooglePlaces</a>
+              </li><li>
+                <a href="app.services.MyCareMakerCalendar.html">MyCareMakerCalendar</a>
+              </li><li>
+                <a href="app.services.MyCareMakerNotifications.html">MyCareMakerNotifications</a>
+              </li><li>
+                <a href="app.services.MyCareMakerPopups.html">MyCareMakerPopups</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="content" class="page-wrap">
+      <h3 style="float:right; color:#ccc">
+        Angular Factories
+      </h3>
+      <h1 class="title">
+        ConfigurationData
+        <a class="name-link signature-attributes" href="source/app.services.ConfigurationData.html#line1424">source</a>
+      </h1>
+      <div id="main" class="big-container">
+        <!-- source code html -->
+        <!-- index.html -->
+        <!-- class files -->
+        <div>
+          <div><div class="container-overview">
+      <dt></dt>
+      <dd>
+        <div class="description">
+          <p>This holds the user configuration data in localstorage, as well as API keys used 
+in the GooglePlaces object.</p>
+        </div>
+        <div class="details"></div>
+      </dd>
+    </div>
+    <section>
+      <div class="members">
+        <h3 class="subsection-title">Members</h3>
+        <table class="props">
+          <thead>
+            <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name" nowrap="">apiKeyAndroid</td>
+              <td class="type"><span class="param-type">
+                String
+              </span></td>
+              <td class="description last"><p>Google API for Android</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">apiKeyBrowser</td>
+              <td class="type"><span class="param-type">
+                String
+              </span></td>
+              <td class="description last"><p>Google API for use in browser (Android key will work)</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">apiKeyIos</td>
+              <td class="type"><span class="param-type">
+                String
+              </span></td>
+              <td class="description last"><p>Google API for iOS.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">budgetSet</td>
+              <td class="type"><span class="param-type">
+                boolean
+              </span></td>
+              <td class="description last"><p>True if the budget data is set.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">firstSet</td>
+              <td class="type"><span class="param-type">
+                boolean
+              </span></td>
+              <td class="description last"><p>Holds the firstSet value.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">fontSize</td>
+              <td class="type"><span class="param-type">
+                Integer
+              </span></td>
+              <td class="description last"><p>Font size holder.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">personalBudgetInfo</td>
+              <td class="type"><span class="param-type">
+                Object
+              </span></td>
+              <td class="description last"><p>Personal budget object.
+Members personalBudget object and anniversaryDate types number and integer respecitively.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">styleOption</td>
+              <td class="type"><span class="param-type">
+                String
+              </span></td>
+              <td class="description last"><p>A string of either 'style_vanilla' and 'style_green'.</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+      </div>
+      <div class="functions">
+        <h3 class="subsection-title">Methods</h3>
+        <dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1524" class="name-link">
+              <h4 class="name">
+                getCoordinates
+                <span class="signature">(currentOrPostcodeFlag)</span>
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Gets the coordinates of the user location if it has been set.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">currentOrPostcodeFlag</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"><p>Not supported potential for getting the phones
+current position.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"><p>Returns the Google Places location same object as 
+GooglePlaces getCoordinates returns.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1577" class="name-link">
+              <h4 class="name">
+                getFontSize
+                <span class="type-signature">
+                  -&gt; Integer
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>This returns the user set font size from localstorage. The value is an
+int that sets the fontsize to a basic size of &lt; p &gt; tags have the font
+size of 14px.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Integer
+                    </span></td>
+                    <td class="description last"><p>The font size in pixel size.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1441" class="name-link">
+              <h4 class="name">
+                getKey
+                <span class="type-signature">
+                  -&gt; String
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Returns an Google API that is Android or iOS.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      String
+                    </span></td>
+                    <td class="description last"><p>Google API key for either android of iOS.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1502" class="name-link">
+              <h4 class="name">
+                getPostCode
+                <span class="type-signature">
+                  -&gt; String
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Gets the user set postcode for the settings page.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      String
+                    </span></td>
+                    <td class="description last"><p>The user set postcode.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1562" class="name-link">
+              <h4 class="name">
+                getStyleOption
+                <span class="type-signature">
+                  -&gt; String
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Gets the user set style string from localstorage.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      String
+                    </span></td>
+                    <td class="description last"><p>Returns the user set style value.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1455" class="name-link">
+              <h4 class="name">
+                isFirstSet
+                <span class="type-signature">
+                  -&gt; boolean
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Returns false if the user has set their postcode. And true otherwise.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      boolean
+                    </span></td>
+                    <td class="description last"><p>First time on the App.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1482" class="name-link">
+              <h4 class="name">
+                setBudgetSet
+                <span class="signature">(bool)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Can set the budgetSet value to true or false.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">bool</td>
+                    <td class="type"><span class="param-type">
+                      boolean
+                    </span></td>
+                    <td class="description last"><p>The value it is to be set to.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1542" class="name-link">
+              <h4 class="name">
+                setCoordinates
+                <span class="signature">(newCoordinates)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Sets the users postcode location and stores it in localstorage.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">newCoordinates</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>Coordinates object from GooglePlaces.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1492" class="name-link">
+              <h4 class="name">
+                setFirstSet
+                <span class="signature">(bool)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Sets the firstSet value to a boolean value, true or false.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">bool</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>Value to be set.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1590" class="name-link">
+              <h4 class="name">
+                setFontSize
+                <span class="signature">(size)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Set the font size to localstorge.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">size</td>
+                    <td class="type"><span class="param-type">
+                      Integer
+                    </span></td>
+                    <td class="description last"><p>Font size to be stored.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1616" class="name-link">
+              <h4 class="name">
+                setPersonalBudgetInfo
+                <span class="signature">(newPbInfo)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Stores a user set personalBudget info object.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">newPbInfo</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>A new personalbudget info object to be stored.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1510" class="name-link">
+              <h4 class="name">
+                setPostCode
+                <span class="signature">(newPostCode)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Sets the users stored postcode for the app.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">newPostCode</td>
+                    <td class="type"><span class="param-type">
+                      String
+                    </span></td>
+                    <td class="description last"><p>String of a UK postcode.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.ConfigurationData.html#line1552" class="name-link">
+              <h4 class="name">
+                setStyleOption
+                <span class="signature">(style)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Style options can be 'style_vanilla' or 'style_green'.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">style</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>The user style option.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </section></div>
+        </div>
+      </div>
+      <footer style="clear:both">
+        Documentation generated by
+        <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a>
+        using
+        <a href="https://github.com/allenhwkim/angular-jsdoc">Angular-JSDoc template</a>
+      </footer>
+    </div>
+    <!--%= prettyJson %-->
+    <script>
+      prettyPrint();
+      var lineNo = window.location.hash.match(/#line([0-9]+)$/);
+      lineNo && document.querySelector("ol li:nth-child("+(lineNo[1])+")").scrollIntoView();
+    </script>
+  </body>
+</html>

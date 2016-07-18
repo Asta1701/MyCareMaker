@@ -1,0 +1,27 @@
+<ion-view>
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+        <div class="section_title">
+            <h2 class="section_title">My Appointments</h2>
+        </div>
+        <br/>
+        <mycaremaker-add submit-fn="createAppointment()" btnadd="Add an Appointment" btncancel="Cancel" 
+                 btnsubmit="Create Appointment" btnclass="{{style}}_foreground" 
+                 inputclass="{{style}}_background" labelclass="{{style}}_foreground"
+                 inputs="inputList"></mycaremaker-add>
+
+        <div class="list card item-remove-animate" ng-repeat="appointment in appointments">
+            <div class="item item-divider item-icon-right {{style}}_foreground">
+
+                <h2 class="{{style}}_foreground" style="font-size:25px">{{appointment.title}}<p class="{{style}}_foreground" style="font-size:22px" ng-if="appointment.json.type == 'appointment' ">[Appointment]</p></h2>
+                <i class="icon ion-close-circled" ng-click="deleteAppointment(appointment)"></i>
+         
+            </div>
+            <div class="item item-body {{style}}_middleground">
+                <p><strong class="{{style}}_middleground" style="font-size:20px">Start:  </strong> <strong class="{{style}}_middleground" style="font-size:22px">{{appointment.timeSt}}</strong></strong></p>
+                <p><strong class="{{style}}_middleground" style="font-size:20px">End: </strong><strong class="{{style}}_middleground" style="font-size:22px">{{appointment.timeEnd}}</strong></p>
+                <p class="{{style}}_middleground" ng-if=" (appointment.location !== undefined)  "><strong class="{{style}}_middleground" style="font-size:20px">Location: </strong><strong class="style_event_time" style="font-size:22px">{{event.location}}</strong></p>
+                <p class="{{style}}_middleground" ng-if="!(appointment.json.notes.toString() == undefined)">Notes: {{appointment.json.notes}}</p>
+            </div>
+        </div>
+    </ion-scroll>
+</ion-view>

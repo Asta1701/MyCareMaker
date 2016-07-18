@@ -1,0 +1,205 @@
+/* 
+    Created on : 30-Oct-2015, 09:48:22
+    Author     : Edward A. Mothershaw
+*/
+.popup {
+    border-radius: 10%;
+}
+.popup-head{
+    background: #009688 !important;    
+}
+.popup-title {
+    color: #F0F677 !important;
+    font-size:24px !important;
+    font-weight: bold !important;
+}
+.popup-body{
+  background: whitesmoke !important;
+  color: #009688 !important;
+  font-size: 18px !important;
+ 
+}
+.popup-buttons {
+    background: whitesmoke !important;
+}
+
+.popup{
+    width: 90% !important;
+}
+  
+/*http://stackoverflow.com/questions/27153528/vertical-scrolling-not-working-in-ionic*/
+ion-scroll[direction=xy] {
+    height: 95%;
+    
+}
+ion-scroll.has-footer.has-header {
+    height: 88%;
+    
+}
+ion-scroll.dirPopup {
+    height: 75vh !important;
+}
+
+/*http://codepen.io/rajeshwarpatlolla/pen/KdwdNo*/
+.large_button {
+  line-height: 25vh !important;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.icon_custom {
+  font-size:40px;
+  padding:10px;
+}  
+/*end of code copy.*/
+
+.icon_rating {
+  font-size:30px;
+  padding:5px;
+}  
+textarea {
+    max-height: 90%;
+    max-width: 100%;
+    resize: none;
+    padding: 0.5em;
+    font-size: 18px !important;
+    line-height: 1em !important;
+    font-weight: bold !important;
+}
+select {
+    font-weight: bold !important;
+}
+
+/*h1 {
+    font-size: 18px !important;
+}*/
+
+mcm_button_large {
+    
+    font-size: 20px !important;
+}
+
+/*Bold*/
+a.button, button {
+    
+    font-weight: bold !important;
+    text-align: center;
+    
+}
+
+input[type=text] {
+    
+    width: 100px !important;
+}
+
+input {
+    margin-right: 20px !important;
+    font-weight: bold !important;
+    
+}
+div.section_title {
+    text-align: center;
+    padding: 0.5em;
+/*    background-color: green;*/
+
+}
+
+div {
+    font-weight: bold;
+    
+}
+
+p, h2, h3, label, span {
+    font-weight: bold !important;
+}
+h2.section_title {
+    font-weight: bold;
+    padding: 0.45em 0 0 0;
+
+}
+
+div.item-divider {
+
+    font-weight: bold;
+}
+
+h3.balance {
+    font-weight: normal !important;
+    text-align: center;
+}
+
+/*Light background colour scheme.*/
+.style_vanilla_background {
+    color: #009688 !important;
+    background-color: white !important;/*#F3E252 !important;/*linear-gradient(#F3E252, #F3EE52);/* Standard syntax (must be last) */
+}
+.style_vanilla_middleground {
+    color: #009388 !important;
+    background-color: whitesmoke !important;/*#E8D535 !important; /*linear-gradient(#F3E252, #F3EE52);/* Standard syntax (must be last) */
+}
+.style_vanilla_foreground {
+    color: #F0F677 !important;
+    background-color: #009688 !important;
+}
+
+/*Dark background colour scheme. Reversed colours.*/
+.style_green_background {
+    color: white !important;
+    background-color: #009688 !important;/*#F3E252 !important;/*linear-gradient(#F3E252, #F3EE52);/* Standard syntax (must be last) */
+}
+.style_green_middleground {
+    color: whitesmoke !important;
+    background-color: #009388 !important;/*#E8D535 !important; /*linear-gradient(#F3E252, #F3EE52);/* Standard syntax (must be last) */
+}
+.style_green_foreground {
+/*    border: lightgreen;*/
+    color: #009688 !important;
+    background-color: #F0F677 !important;
+    
+}
+/*From http://www.castillo.io/blog/angular-text-slider*/ 
+/**
+ * Text Slider Directive - CSS  
+ **/
+.text-size-slider .small-letter,
+.text-size-slider .big-letter {
+    font-weight: bold;
+    
+}
+.text-size-slider {
+    /*line-height: 150%;*/
+    font-size: 14px;
+    text-align: center !important;
+
+}
+
+.text-size-slider .Slider {
+    text-align: center;
+    /*width: 10% !important;*/
+    -webkit-appearance: none;
+    margin: 0 8px;
+}
+
+.text-size-slider .Slider:focus {
+    outline: none;
+}
+
+.text-size-slider .Slider::-webkit-slider-thumb {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -9px;
+}
+
+.text-size-slider .Slider::-webkit-slider-runnable-track {
+    height: 2px;
+    width: 100px !important;
+    cursor: pointer;
+    background: black;
+    border: 0;
+}
+/*code copy end*/
+

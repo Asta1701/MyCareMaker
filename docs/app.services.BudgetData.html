@@ -1,0 +1,957 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JSDoc: BudgetData</title>
+    <link type="text/css" rel="stylesheet" href="css/jsdoc-default.css">
+    <link href="css/prettify-tomorrow.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <script src="js/prettify.js"></script>
+    <script src="js/angular.min.js"></script>
+  </head>
+  <body ng-app="">
+    <nav>
+      <h2><a href="index.html">Index</a></h2>
+      <ul class="module">
+        <!-- app_controllers -->
+        <h3>
+          <a href="" ng-click="moduleapp_controllers = !moduleapp_controllers">
+            module: app.controllers
+          </a>
+          <i ng-cloak="" ng-show="moduleapp_controllers">+</i>
+        </h3>
+        <li id="app.controllers" ng-hide="moduleapp_controllers">
+          <ul class="group">
+            <h3>
+              <a href="" ng-click="app_controllersControllers = !app_controllersControllers">
+                Controllers
+              </a>
+              <i ng-cloak="" ng-show="app_controllersControllers">+</i>
+            </h3>
+            <ul ng-hide="app_controllersControllers">
+              <li>
+                <a href="app.controllers.budgetCtrl.html">budgetCtrl</a>
+              </li><li>
+                <a href="app.controllers.contactsCtrl.html">contactsCtrl</a>
+              </li><li>
+                <a href="app.controllers.general-Planning-My-CareCtrl.html">general-Planning-My-CareCtrl</a>
+              </li><li>
+                <a href="app.controllers.main-PageCtrl.html">main-PageCtrl</a>
+              </li><li>
+                <a href="app.controllers.medicationsCtrl.html">medicationsCtrl</a>
+              </li><li>
+                <a href="app.controllers.settingsCtrl.html">settingsCtrl</a>
+              </li><li>
+                <a href="app.controllers.things-To-Do-TodayCtrl.html">things-To-Do-TodayCtrl</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- app_services -->
+        <h3>
+          <a href="" ng-click="moduleapp_services = !moduleapp_services">
+            module: app.services
+          </a>
+          <i ng-cloak="" ng-show="moduleapp_services">+</i>
+        </h3>
+        <li id="app.services" ng-hide="moduleapp_services">
+          <ul class="group">
+            <h3>
+              <a href="" ng-click="app_servicesFactories = !app_servicesFactories">
+                Factories
+              </a>
+              <i ng-cloak="" ng-show="app_servicesFactories">+</i>
+            </h3>
+            <ul ng-hide="app_servicesFactories">
+              <li>
+                <a href="app.services.BudgetData.html">BudgetData</a>
+              </li><li>
+                <a href="app.services.CarePlanData.html">CarePlanData</a>
+              </li><li>
+                <a href="app.services.ConfigurationData.html">ConfigurationData</a>
+              </li><li>
+                <a href="app.services.GooglePlaces.html">GooglePlaces</a>
+              </li><li>
+                <a href="app.services.MyCareMakerCalendar.html">MyCareMakerCalendar</a>
+              </li><li>
+                <a href="app.services.MyCareMakerNotifications.html">MyCareMakerNotifications</a>
+              </li><li>
+                <a href="app.services.MyCareMakerPopups.html">MyCareMakerPopups</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="content" class="page-wrap">
+      <h3 style="float:right; color:#ccc">
+        Angular Factories
+      </h3>
+      <h1 class="title">
+        BudgetData
+        <a class="name-link signature-attributes" href="source/app.services.BudgetData.html#line658">source</a>
+      </h1>
+      <div id="main" class="big-container">
+        <!-- source code html -->
+        <!-- index.html -->
+        <!-- class files -->
+        <div>
+          <div><div class="container-overview">
+      <dt></dt>
+      <dd>
+        <div class="description">
+          <p>This factory holds the information displayed in the My Budget page. I refer to
+things in this factory using database terminology but that is only but it's
+simpler to think of the budgetData member as a database where the index number
+of the array is a rows primary key.</p>
+        </div>
+        <div class="details"></div>
+      </dd>
+    </div>
+    <section>
+      <div class="members">
+        <h3 class="subsection-title">Members</h3>
+        <table class="props">
+          <thead>
+            <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name" nowrap="">addedRenewal</td>
+              <td class="type"><span class="param-type">
+                boolean
+              </span></td>
+              <td class="description last"><p>Holds the value of wether the monthly renewal has been added yet.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">budgetData</td>
+              <td class="type"><span class="param-type">
+                Array
+              </span></td>
+              <td class="description last"><p>An array of the budget objects.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">inputsList</td>
+              <td class="type"><span class="param-type">
+                Array
+              </span></td>
+              <td class="description last"><p>Array of objects used with the MyCareMakerAdd directive. The input list
+required for a budget object to be valid.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">personalBudgetInfo</td>
+              <td class="type"><span class="param-type">
+                Object
+              </span></td>
+              <td class="description last"><p>Holds the renewal date of the the personal budget and the amount it is.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">validationErrorCodes</td>
+              <td class="type"><span class="param-type">
+                Object
+              </span></td>
+              <td class="description last"><p>An object with the possible validation errors as keys. Clones for use.</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+      </div>
+      <div class="functions">
+        <h3 class="subsection-title">Methods</h3>
+        <dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line862" class="name-link">
+              <h4 class="name">
+                addRow
+                <span class="signature">(row)</span>
+                <span class="type-signature">
+                  -&gt; undefined
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Adds a balance variable to the row and then adds it to the budgetData 
+object.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">row</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>Row to be added to budgetData array.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      undefined
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line954" class="name-link">
+              <h4 class="name">
+                addRow
+                <span class="signature">(row)</span>
+                <span class="type-signature">
+                  -&gt; undefined
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Adds a row to the budgetData array. Is wrapped around by the object method
+addRow.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">row</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>The row to be added to the budgetData array.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      undefined
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line829" class="name-link">
+              <h4 class="name">
+                getBalance
+                <span class="type-signature">
+                  -&gt; Number
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Sums the credit, debit columns of the budgetData array and returns the
+sum.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Number
+                    </span></td>
+                    <td class="description last"><p>Balance of the object data.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line813" class="name-link">
+              <h4 class="name">
+                getBudgetData
+                <span class="type-signature">
+                  -&gt; Array
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Gets the budgetData array after first initialising it and sorting it
+by date.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Array
+                    </span></td>
+                    <td class="description last"><p>The array of budget objects, budgetData.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line802" class="name-link">
+              <h4 class="name">
+                getBudgetInputList
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Returns the inputsList member for use with a MyCareMakerAdd directive
+tag.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"><p>Clones the inputsList member.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line1048" class="name-link">
+              <h4 class="name">
+                getFirstTimeDate
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; Date
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+This calculates the date of the first payment to the user based on the 
+anniversaryDate they have chosen. It will back date the first date.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Date
+                    </span></td>
+                    <td class="description last"><p>The users first personal budget date.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line782" class="name-link">
+              <h4 class="name">
+                getNewRowFromInputs
+                <span class="signature">(inputArray)</span>
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Produces the new budget object from the input list.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">inputArray</td>
+                    <td class="type"><span class="param-type">
+                      Array
+                    </span></td>
+                    <td class="description last"><p>List of inputs same object as this objects inputsList member.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"><p>A user input budget object.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line735" class="name-link">
+              <h4 class="name">
+                getValidationErrorCodes
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Clones the validationErrorCodes object.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"><p>Cloned version of validationErrorCodes object.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line984" class="name-link">
+              <h4 class="name">
+                initialiseAddedRenewal
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; boolean
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Gets the addedRenewal value from storage.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      boolean
+                    </span></td>
+                    <td class="description last"><p>The addedRenewal value.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line999" class="name-link">
+              <h4 class="name">
+                initialiseBudgetData
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; undefined
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Sets the budgetData object from localStorage.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      undefined
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line890" class="name-link">
+              <h4 class="name">
+                initialiseData
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; undefined
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+This function initialises the budgetData array, and will add rows automatically
+if it is your monthly budget renewal date or your first time using the budget 
+system.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      undefined
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line969" class="name-link">
+              <h4 class="name">
+                initialisePersonalBudgetInfo
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; Boolean
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+True if pb info is set. False otherwise.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Boolean
+                    </span></td>
+                    <td class="description last"><p>Success or fail.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line1037" class="name-link">
+              <h4 class="name">
+                isAnniversaryDate
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; Boolean
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Checks if it is the anniversary date.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Boolean
+                    </span></td>
+                    <td class="description last"><p>True if it is.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line874" class="name-link">
+              <h4 class="name">
+                length
+                <span class="type-signature">
+                  -&gt; Integer
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Returns the length of the budgetData array.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Integer
+                    </span></td>
+                    <td class="description last"><p>Length of the budgetData array.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line1015" class="name-link">
+              <h4 class="name">
+                setAddedRenewal
+                <span class="signature">(bool)</span>
+                <span class="type-signature">
+                  -&gt; undefined
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Sets the addedRenewal value to true or false and stores in localStorage.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">bool</td>
+                    <td class="type"><span class="param-type">
+                      boolean
+                    </span></td>
+                    <td class="description last"><p>True or false.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      undefined
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line1079" class="name-link">
+              <h4 class="name">
+                sortData
+                <span class="signature">(data)</span>
+                <span class="type-signature">
+                  -&gt; Array
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Sorts the budget.data by the elements dates.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">data</td>
+                    <td class="type"><span class="param-type">
+                      array
+                    </span></td>
+                    <td class="description last"><p>The budgetData array.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Array
+                    </span></td>
+                    <td class="description last"><p>The array that is put in but sorted.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line1026" class="name-link">
+              <h4 class="name">
+                storeBudgetData
+                <span class="signature">()</span>
+                <span class="type-signature">
+                  -&gt; undefined
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Private function.<br>
+Stores the budgetData array in localStorage.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      undefined
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.BudgetData.html#line745" class="name-link">
+              <h4 class="name">
+                validateRow
+                <span class="signature">(row)</span>
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Validates a new user inputted row.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">row</td>
+                    <td class="type"><span class="param-type">
+                      type
+                    </span></td>
+                    <td class="description last"><p>A new budget object, potential new element for budgetData</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"><p>A processed version of the validationErrorCodes object.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </section></div>
+        </div>
+      </div>
+      <footer style="clear:both">
+        Documentation generated by
+        <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a>
+        using
+        <a href="https://github.com/allenhwkim/angular-jsdoc">Angular-JSDoc template</a>
+      </footer>
+    </div>
+    <!--%= prettyJson %-->
+    <script>
+      prettyPrint();
+      var lineNo = window.location.hash.match(/#line([0-9]+)$/);
+      lineNo && document.querySelector("ol li:nth-child("+(lineNo[1])+")").scrollIntoView();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+ionic plugin add cordova-plugin-inappbrowser
+ionic plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+ionic plugin add org.apache.cordova.contacts
+ionic plugin add https://github.com/katzer/cordova-plugin-local-notifications.git
+ionic plugin add ionic-plugin-keyboard
+ionic plugin add org.apache.cordova.network-information
+ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git
+ionic plugin add cordova-plugin-splashscreen
+

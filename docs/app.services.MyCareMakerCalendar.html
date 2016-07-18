@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JSDoc: MyCareMakerCalendar</title>
+    <link type="text/css" rel="stylesheet" href="css/jsdoc-default.css">
+    <link href="css/prettify-tomorrow.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <script src="js/prettify.js"></script>
+    <script src="js/angular.min.js"></script>
+  </head>
+  <body ng-app="">
+    <nav>
+      <h2><a href="index.html">Index</a></h2>
+      <ul class="module">
+        <!-- app_controllers -->
+        <h3>
+          <a href="" ng-click="moduleapp_controllers = !moduleapp_controllers">
+            module: app.controllers
+          </a>
+          <i ng-cloak="" ng-show="moduleapp_controllers">+</i>
+        </h3>
+        <li id="app.controllers" ng-hide="moduleapp_controllers">
+          <ul class="group">
+            <h3>
+              <a href="" ng-click="app_controllersControllers = !app_controllersControllers">
+                Controllers
+              </a>
+              <i ng-cloak="" ng-show="app_controllersControllers">+</i>
+            </h3>
+            <ul ng-hide="app_controllersControllers">
+              <li>
+                <a href="app.controllers.budgetCtrl.html">budgetCtrl</a>
+              </li><li>
+                <a href="app.controllers.contactsCtrl.html">contactsCtrl</a>
+              </li><li>
+                <a href="app.controllers.general-Planning-My-CareCtrl.html">general-Planning-My-CareCtrl</a>
+              </li><li>
+                <a href="app.controllers.main-PageCtrl.html">main-PageCtrl</a>
+              </li><li>
+                <a href="app.controllers.medicationsCtrl.html">medicationsCtrl</a>
+              </li><li>
+                <a href="app.controllers.settingsCtrl.html">settingsCtrl</a>
+              </li><li>
+                <a href="app.controllers.things-To-Do-TodayCtrl.html">things-To-Do-TodayCtrl</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- app_services -->
+        <h3>
+          <a href="" ng-click="moduleapp_services = !moduleapp_services">
+            module: app.services
+          </a>
+          <i ng-cloak="" ng-show="moduleapp_services">+</i>
+        </h3>
+        <li id="app.services" ng-hide="moduleapp_services">
+          <ul class="group">
+            <h3>
+              <a href="" ng-click="app_servicesFactories = !app_servicesFactories">
+                Factories
+              </a>
+              <i ng-cloak="" ng-show="app_servicesFactories">+</i>
+            </h3>
+            <ul ng-hide="app_servicesFactories">
+              <li>
+                <a href="app.services.BudgetData.html">BudgetData</a>
+              </li><li>
+                <a href="app.services.CarePlanData.html">CarePlanData</a>
+              </li><li>
+                <a href="app.services.ConfigurationData.html">ConfigurationData</a>
+              </li><li>
+                <a href="app.services.GooglePlaces.html">GooglePlaces</a>
+              </li><li>
+                <a href="app.services.MyCareMakerCalendar.html">MyCareMakerCalendar</a>
+              </li><li>
+                <a href="app.services.MyCareMakerNotifications.html">MyCareMakerNotifications</a>
+              </li><li>
+                <a href="app.services.MyCareMakerPopups.html">MyCareMakerPopups</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="content" class="page-wrap">
+      <h3 style="float:right; color:#ccc">
+        Angular Factories
+      </h3>
+      <h1 class="title">
+        MyCareMakerCalendar
+        <a class="name-link signature-attributes" href="source/app.services.MyCareMakerCalendar.html#line4">source</a>
+      </h1>
+      <div id="main" class="big-container">
+        <!-- source code html -->
+        <!-- index.html -->
+        <!-- class files -->
+        <div>
+          <div><div class="container-overview">
+      <dt></dt>
+      <dd>
+        <div class="description">
+          <p>This is the MyCareMakerCalendar it provides a simplified wrapper class to the
+ngCordova $cordovaCalendar.</p>
+        </div>
+        <div class="details"></div>
+        <div>
+          <h5>Dependencies:</h5>
+          <table class="params">
+            <thead>
+              <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name" nowrap="">MyCareMakerNotifications</td>
+                <td class="type"><span class="param-type">
+                  Object
+                </span></td>
+                <td class="description last"><p>Factory Object</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </dd>
+    </div>
+    <section>
+      <div class="members">
+        <h3 class="subsection-title">Members</h3>
+        <table class="props">
+          <thead>
+            <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name" nowrap="">inputsList</td>
+              <td class="type"><span class="param-type">
+                Array
+              </span></td>
+              <td class="description last"><p>Inputs list array. Create the necessary input fields and is cloned by
+a method in the controller.</p></td>
+            </tr><tr>
+              <td class="name" nowrap="">validationErrorCodes</td>
+              <td class="type"><span class="param-type">
+                Array
+              </span></td>
+              <td class="description last"><p>Validation array of the error codes that an event may have.</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+      </div>
+      <div class="functions">
+        <h3 class="subsection-title">Methods</h3>
+        <dl>
+          <dt>
+            <a href="source/app.services.MyCareMakerCalendar.html#line87" class="name-link">
+              <h4 class="name">
+                constructCalendarEventFromInputs
+                <span class="signature">(inputArray)</span>
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">inputArray</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"><p>is an array containing the input elements required
+to create an event(e.g. title, startDate,
+endDate, location, notes, reminder).
+The elements in the array are then assigned to each key of the event variable.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.MyCareMakerCalendar.html#line188" class="name-link">
+              <h4 class="name">
+                create
+                <span class="signature">(event, eventType, callback)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>This method passes all the values (startDate, endDate, title,
+ location, notes) into a JSON object. In addition it creates reminders
+ and sets appropriate Notifications using the title, event type, and location
+ according to the time the reminder was set.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">event</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr><tr>
+                    <td class="name">eventType</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr><tr>
+                    <td class="name">callback</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.MyCareMakerCalendar.html#line157" class="name-link">
+              <h4 class="name">
+                delete
+                <span class="signature">(event, callback, eventType)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>This method utilises the cordovaCalendar method deleteEvent to delete
+the event selected. It does so by deleting the event based on its
+title, startDate and endDate. The method also uses the removeNotification
+function to ensure event notifications are deleted as well.
+The method returns an alert if the event fails to delete.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">event</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"><p>This parameter and its values are used to specify the event to be deleted.</p></td>
+                  </tr><tr>
+                    <td class="name">callback</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr><tr>
+                    <td class="name">eventType</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.MyCareMakerCalendar.html#line73" class="name-link">
+              <h4 class="name">
+                getCalendarInputs
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>Is a function that returns the necessary calendar inputs in order
+to create an event.</p>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"><p>This returns the calendar inputs to be put into
+mycaremaker-add AngularJS tags.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.MyCareMakerCalendar.html#line257" class="name-link">
+              <h4 class="name">
+                getEvents
+                <span class="signature">(callback, eventType)</span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>This calendar plugin does not include a method to get events.
+The goal of this method is to list the events registered for the
+current day. To achieve such functionality the findEvent method is utilised.
+The startDate was set as 00:00:00 which corresponds to the fist hour, minute,
+second of the day and then the endDate was set to 23:59:59 which corresponds to
+the last hour, minute and second of the day respectively. The rest of the field
+values are left blank to ensure all the events within the timeframe are included.
+The events are then passed in an array.
+The method also checks if the event type is valid.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">callback</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr><tr>
+                    <td class="name">eventType</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl><dl>
+          <dt>
+            <a href="source/app.services.MyCareMakerCalendar.html#line119" class="name-link">
+              <h4 class="name">
+                validateEvent
+                <span class="signature">(event)</span>
+                <span class="type-signature">
+                  -&gt; Object
+                </span>
+              </h4>
+            </a>
+          </dt>
+          <dd>
+            <div class="description">
+              <p>This method checks the fields of the object to ensure they
+are not empty or undefined. The method ensures the start time
+is not later than the end date. The method does not validate location
+and notes as they can be left empty.</p>
+            </div>
+            <div>
+              <h5>Parameters:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Name</th><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name">event</td>
+                    <td class="type"><span class="param-type">
+                    </span></td>
+                    <td class="description last"><p>The event variable holds the following values title, startDate,
+endDate, location, notes, reminder.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h5>Returns:</h5>
+              <table class="params">
+                <thead>
+                  <tr><th>Type</th><th class="last">Description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="type"><span class="param-type">
+                      Object
+                    </span></td>
+                    <td class="description last"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </section></div>
+        </div>
+      </div>
+      <footer style="clear:both">
+        Documentation generated by
+        <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a>
+        using
+        <a href="https://github.com/allenhwkim/angular-jsdoc">Angular-JSDoc template</a>
+      </footer>
+    </div>
+    <!--%= prettyJson %-->
+    <script>
+      prettyPrint();
+      var lineNo = window.location.hash.match(/#line([0-9]+)$/);
+      lineNo && document.querySelector("ol li:nth-child("+(lineNo[1])+")").scrollIntoView();
+    </script>
+  </body>
+</html>

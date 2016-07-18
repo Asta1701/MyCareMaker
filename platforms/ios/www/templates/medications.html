@@ -1,0 +1,90 @@
+<ion-view>
+
+    <ion-scroll padding="'true'" class="has-header" zooming="true" direction="xy" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+         <div class="section_title" >
+            <h2 class="section_title">My medications</h2>
+        </div>
+        <br/>
+            <!--<div ng-repeat="medication in medicationList">-->
+                <div ng-if="timeExists[0]" class="list card item-remove-animate" >
+                    <div class="item item-text-wrap item-divider item-icon-right {{style}}_foreground">
+
+                        <h2 class="{{style}}_foreground" style="font-size:25px">Morning</h2>
+
+                    </div>
+                    <div class="item item-body {{style}}_middleground">
+                        <ion-list>
+                        <div class="item item-divider item-icon-right {{style}}_foreground"
+                             ng-repeat="medication in medicationList" ng-if="medication.momentOfDay == 'morning'">
+                            NAME: {{medication.name}} 
+                            <br/>DESCRIPTION: {{medication.description}}
+                            <!--<br/>TIME OF THE DAY: {{medication.momentOfDay}}-->
+                            <i class="icon ion-close-circled" ng-click="deleteMedication(medication.name)"></i>
+                        </div>
+                        </ion-list>
+                    </div>
+                </div>
+                
+                <div ng-if="timeExists[1]" class="list card item-remove-animate" >
+                    <div class="item item-text-wrap item-divider item-icon-right {{style}}_foreground">
+
+                        <h2 class="{{style}}_foreground" style="font-size:25px">Afternoon</h2>
+
+                    </div>
+                    <div class="item item-body {{style}}_middleground">
+                        <ion-list>
+                        <div class="item item-divider item-icon-right {{style}}_foreground"
+                             ng-repeat="medication in medicationList" ng-if="medication.momentOfDay == 'afternoon'">
+                            NAME: {{medication.name}} 
+                            <br/>DESCRIPTION: {{medication.description}}
+                            <!--<br/>TIME OF THE DAY: {{medication.momentOfDay}}-->
+                            <i class="icon ion-close-circled" ng-click="deleteMedication(medication.name)"></i>
+                        </div>
+                        </ion-list>
+                    </div>
+                </div>
+                
+                <div ng-if="timeExists[2]" class="list card item-remove-animate" >
+                    <div class="item item-text-wrap item-divider item-icon-right {{style}}_foreground">
+
+                        <h2 class="{{style}}_foreground" style="font-size:25px">Evening</h2>
+
+                    </div>
+                    <div class="item item-body {{style}}_middleground">
+                        <ion-list>
+                        <div class="item item-divider item-icon-right {{style}}_foreground"
+                             ng-repeat="medication in medicationList" ng-if="medication.momentOfDay == 'evening'">
+                            NAME: {{medication.name}} 
+                            <br/>DESCRIPTION: {{medication.description}}
+                            <!--<br/>TIME OF THE DAY: {{medication.momentOfDay}}-->
+                            <i class="icon ion-close-circled" ng-click="deleteMedication(medication.name)"></i>
+                        </div>
+                        </ion-list>
+                    </div>
+                </div>
+            
+            
+                <div ng-if="timeExists[3]" class="list card item-remove-animate" >
+                    <div class="item item-text-wrap item-divider item-icon-right {{style}}_foreground">
+
+                        <h2 class="{{style}}_foreground" style="font-size:25px">Night</h2>
+
+                    </div>
+                    <div class="item item-body {{style}}_middleground">
+                        <ion-list>
+                        <div class="item item-divider item-icon-right {{style}}_foreground"
+                             ng-repeat="medication in medicationList" ng-if="medication.momentOfDay == 'night'">
+                            NAME: {{medication.name}} 
+                            <br/>DESCRIPTION: {{medication.description}}
+                            <!--<br/>TIME OF THE DAY: {{medication.momentOfDay}}-->
+                            <i class="icon ion-close-circled" ng-click="deleteMedication(medication.name)"></i>
+                        </div>
+                        </ion-list>
+                    </div>
+                </div>
+        <mycaremaker-add submit-fn="saveMedication()" btnadd="Add a new medication" btncancel="Cancel" 
+                         btnsubmit="Add Medication" btnclass="{{style}}_foreground" 
+                         inputclass="{{style}}_background" labelclass="{{style}}_foreground"
+                         inputs="inputList"></mycaremaker-add>
+    </ion-scroll>
+</ion-view>
